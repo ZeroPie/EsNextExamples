@@ -34,7 +34,7 @@ export default Conversation
 
 Async Await
 
-```
+```js
 const fetchMessages = async (roomId = '0') => { 
         setIsLoading(true)
         let messages = await doGetUserMessagesByRoomId(roomId)
