@@ -37,16 +37,43 @@ Destructuring:
 
 
 ```
+
+
+const pileOfGoo = {
+  goo: 'goo',
+  isToxic: true,
+  name: 'pileOfGoo'
+}
+
+const randomUser = {
+  name: 'Jack'
+}
+
 export const createUser = ({
-    name = "",
-    fetishes = {},
-    photoURL = "",
-	opinions
+  name = "NoName",
+  isToxic = '',
+  fetishes = {},
+  photoURL = ""
 } = {}) => ({
-    name,
-  	photoURL,
-    fetishes
+  name,
+  private: {
+    fetishes: {}
+  },
+  photoURL
 })
+
+
+const list = ['1st', 8,9]
+//const [head, ...tail] = list
+
+const getHead = ([head]) => head
+const getTail = ([, ...tail]) => tail
+const bj = getHead(list)
+bj
+const booty = getTail(list);
+booty
+
+
 
 
 
