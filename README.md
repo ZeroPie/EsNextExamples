@@ -6,7 +6,25 @@ Return a reversed copy of it
 
 const invertArray = array => [...array].reverse();
 
-```
+
+OK ok what's all this magic?
+
+```js
+export const doGetUserByUid = async uid =>
+    firestore
+        .collection("users")
+        .doc(uid)
+        .get()
+        .then(doc => doc.data())
+
+const doGetPrivateDataFromUser = async uid => 
+    firestore
+    .collection('users')
+    .doc(uid)
+    .collection('privateData')
+    .get()
+    .then(querySnapshot => querySnapshot.docs.map(documentSnapshot => documentSnapshot.data()))
+
 export const doGetUserProfileByUid = async uid => {    
       let publicData = await doGetUserByUid(uid)
       let privateData = await doGetPrivateDataFromUser(uid)
@@ -15,6 +33,15 @@ export const doGetUserProfileByUid = async uid => {
       return userProfile
 }
 ```
+
+1) Arrow Functions
+2) async Await
+3) implicit Returns
+4) promises
+5) gathering/spread
+
+
+Destructuring:
 
 ``` js
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
