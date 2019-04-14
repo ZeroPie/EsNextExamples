@@ -17,14 +17,6 @@ export const doGetUserByUid = async uid =>
         .get()
         .then(doc => doc.data())
 
-const doGetPrivateDataFromUser = async uid => 
-    firestore
-    .collection('users')
-    .doc(uid)
-    .collection('privateData')
-    .get()
-    .then(querySnapshot => querySnapshot.docs.map(documentSnapshot => documentSnapshot.data()))
-
 export const doGetUserProfileByUid = async uid => {    
       let publicData = await doGetUserByUid(uid)
       let privateData = await doGetPrivateDataFromUser(uid)
