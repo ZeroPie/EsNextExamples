@@ -6,7 +6,15 @@ Return a reversed copy of it
 
 const invertArray = array => [...array].reverse();
 
-
+```
+export const doGetUserProfileByUid = async uid => {    
+      let publicData = await doGetUserByUid(uid)
+      let privateData = await doGetPrivateDataFromUser(uid)
+      let allData = {...publicData, ...privateData}
+      let userProfile =  PrivateProfile(allData)
+      return userProfile
+}
+```
 
 ``` js
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
