@@ -35,6 +35,23 @@ export const doGetUserProfileByUid = async uid => {
 
 Destructuring:
 
+
+```
+export const createUser = ({
+    uid,
+    name = "",
+    fetishes = {},
+    photoURL = ""
+} = {}) => ({
+    uid,
+    name,
+    privateData: {
+        
+    },
+    fetishes
+})
+```
+
 ``` js
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
 
