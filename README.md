@@ -30,7 +30,7 @@ export const Conversation = ({ senderId, messages }) => {
 }
 
 export default Conversation
-
+```
 
 ``js
 export const doGetUserMessagesByRoomId = async (roomId = '') => {
@@ -43,7 +43,6 @@ export const doGetUserMessagesByRoomId = async (roomId = '') => {
 
 ```
 
-```
 
 ``` js
 import { doGetUserMessagesByRoomId } from "../../../chat/chatkit/chatkit";
