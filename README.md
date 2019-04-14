@@ -44,7 +44,7 @@ export const doGetUserMessagesByRoomId = async (roomId = '') => {
 ```
 
 ```js
-export const doGetTrainersFromFirestore = () =>
+export const doGetDevsFromFirestore = () =>
     firestore
         .collection("users")
         .where("isDev", "==", true)
