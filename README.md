@@ -12,11 +12,7 @@ const invertArray = array => [...array].reverse();
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
 
 export const Conversation = ({ senderId, messages }) => {
-
-    const getMessageParts = ({ parts = [] }) => parts
-    const getMessagePayLoad = ({ payload = {} }) => payload
-    const getMessageContent = message => getMessageParts(message).map(parts => getMessagePayLoad(parts).content)
-    const getMessageContent2 = ({ parts : [{payload : {content}} = {}] = []}) => content
+    const getMessageContent = ({ parts : [{payload : {content}} = {}] = []}) => content
     const isReceiver = id => senderId === id ? 'left' : 'right'
 
     return (
