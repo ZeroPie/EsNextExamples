@@ -4,6 +4,18 @@
 
 Return a reversed copy of it
 
+
+```js
+const list = ['1st', 8,9]
+
+const getHead = ([head]) => head
+const getTail = ([, ...tail]) => tail
+const hed = getHead(list)
+
+const allButtLast = getTail(list);
+const firstEle = getHead(list);
+```
+
 const invertArray = array => [...array].reverse();
 
 
