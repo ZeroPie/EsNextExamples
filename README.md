@@ -31,13 +31,13 @@ export const Conversation = ({ senderId, messages }) => {
 
 export default Conversation
 
+```
 
-Async Await
-
-```js
+``` js
 const fetchMessages = async (roomId = '0') => { 
         setIsLoading(true)
         let messages = await doGetUserMessagesByRoomId(roomId)
         setIsLoading(false)
         return messages
 }
+```
