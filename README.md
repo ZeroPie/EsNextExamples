@@ -65,4 +65,12 @@ const fetchMessages = async (roomId) => {
         setIsLoading(false)
         return messages
 }
+```js
+export const doGetContactListFromUserByUid = uid =>
+    firestore
+        .collection("users")
+        .doc(uid)
+        .collection("contacts")
+        .get()
+        .then(snapshot => snapshot.docs.map(documentSnapshot => documentSnapshot.data()))
 ```
