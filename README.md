@@ -33,8 +33,16 @@ export default Conversation
 
 ```
 
+
+```
+
+```
+
 ``` js
-const fetchMessages = async (roomId = '0') => { 
+import { doGetUserMessagesByRoomId } from "../../../chat/chatkit/chatkit";
+
+
+const fetchMessages = async (roomId) => { 
         setIsLoading(true)
         let messages = await doGetUserMessagesByRoomId(roomId)
         setIsLoading(false)
