@@ -43,6 +43,17 @@ export const doGetUserMessagesByRoomId = async (roomId = '') => {
 
 ```
 
+```js
+export const doGetTrainersFromFirestore = () =>
+    firestore
+        .collection("users")
+        .where("isDev", "==", true)
+        .get()
+        .then(snapshot =>
+            snapshot.docs.map(documentSnapshot => documentSnapshot.data())
+        )
+```
+
 
 ``` js
 import { doGetUserMessagesByRoomId } from "../../../chat/chatkit/chatkit";
