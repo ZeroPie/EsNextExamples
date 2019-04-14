@@ -32,7 +32,13 @@ export const Conversation = ({ senderId, messages }) => {
 export default Conversation
 
 ```
-
+export const doGetUserMessagesByRoomId = async (roomId = '') => {
+    let currentUser = await doGetCurrentUser()
+    return currentUser.fetchMultipartMessages({
+          roomId: roomId,
+          limit: 100,
+      }).then(messages => messages)
+}
 
 ```
 
