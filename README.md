@@ -12,7 +12,7 @@ const getHead = ([head]) => head
 const getTail = ([, ...tail]) => tail
 const hed = getHead(list)
 
-const allButtLast = getTail(list);
+const allButtFirst = getTail(list);
 const firstEle = getHead(list);
 ```
 
