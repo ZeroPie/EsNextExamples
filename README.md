@@ -8,8 +8,7 @@ const invertArray = array => [...array].reverse();
 
 
 
-```
-import React, { Fragment } from "react";
+``` js
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
 
 export const Conversation = ({ senderId, messages }) => {
