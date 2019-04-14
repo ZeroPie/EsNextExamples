@@ -38,18 +38,18 @@ Destructuring:
 
 ```
 export const createUser = ({
-    uid,
     name = "",
     fetishes = {},
-    photoURL = ""
+    photoURL = "",
+	opinions
 } = {}) => ({
-    uid,
     name,
-    privateData: {
-        
-    },
+  	photoURL,
     fetishes
 })
+
+
+
 ```
 
 ``` js
