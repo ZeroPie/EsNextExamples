@@ -131,16 +131,7 @@ export const Conversation = ({ senderId, messages }) => {
 export default Conversation
 ```
 
-```js
-export const doGetUserMessagesByRoomId = async (roomId = '') => {
-    let currentUser = await doGetCurrentUser()
-    return currentUser.fetchMultipartMessages({
-          roomId: roomId,
-          limit: 100,
-      }).then(messages => messages)
-}
-
-```
+Other Real World Stuff
 
 ```js
 export const doGetDevsFromFirestore = () =>
@@ -153,10 +144,28 @@ export const doGetDevsFromFirestore = () =>
         )
 ```
 
+1. implicit return of a promise
+2. use `map` to return a new array with the result of calling a function on each element
+
+```js
+export const doGetUserMessagesByRoomId = async (roomId = '') => {
+    let currentUser = await doGetCurrentUser()
+    return currentUser.fetchMultipartMessages({
+          roomId: roomId,
+          limit: 100,
+      }).then(messages => messages)
+}
+```
+
+Things going on here:
+1. default value for param roomId 
+1. async/await
+1. promise return 
+
+
 
 ``` js
 import { doGetUserMessagesByRoomId } from "../../../chat/chatkit/chatkit";
-
 
 const fetchMessages = async (roomId) => { 
         setIsLoading(true)
@@ -164,12 +173,4 @@ const fetchMessages = async (roomId) => {
         setIsLoading(false)
         return messages
 }
-```js
-export const doGetContactListFromUserByUid = uid =>
-    firestore
-        .collection("users")
-        .doc(uid)
-        .collection("contacts")
-        .get()
-        .then(snapshot => snapshot.docs.map(documentSnapshot => documentSnapshot.data()))
 ```
