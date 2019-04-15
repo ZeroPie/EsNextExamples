@@ -37,6 +37,35 @@ nevaGonnaChange[1] = 0
 nevaGonnaChange.map(i => console.log(` wait wat? ${i}`))
 ```
 
+
+Destructuring:
+
+
+```
+const pileOfGoo = {
+  goo: 'goo',
+  isToxic: true,
+  name: 'pileOfGoo'
+}
+
+const randomUser = {
+  name: 'Jack'
+}
+
+export const createUser = ({
+  name = "NoName",
+  isToxic = '',
+  fetishes = {},
+  photoURL = ""
+} = {}) => ({
+  name,
+  private: {
+    fetishes: {}
+  },
+  photoURL
+})
+```
+
 2.Spreading:
 ```js
     const a = [1,2,3];
@@ -82,33 +111,6 @@ export const doGetUserProfileByUid = async uid => {
 5) gathering/spread
 
 
-Destructuring:
-
-
-```
-const pileOfGoo = {
-  goo: 'goo',
-  isToxic: true,
-  name: 'pileOfGoo'
-}
-
-const randomUser = {
-  name: 'Jack'
-}
-
-export const createUser = ({
-  name = "NoName",
-  isToxic = '',
-  fetishes = {},
-  photoURL = ""
-} = {}) => ({
-  name,
-  private: {
-    fetishes: {}
-  },
-  photoURL
-})
-```
 
 ``` js
 import ChatMessage from "../../Molecules/ChatMessage/ChatMessage";
