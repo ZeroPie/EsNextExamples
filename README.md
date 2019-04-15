@@ -17,7 +17,7 @@ const firstEle = getHead(list);
 
 things going on there...
 
-1) destructuring
+1) Destructuring
 2) arrow functions
 3) var dumping in destructuring ,
 4) ( ͡° ͜ʖ ͡°) 
@@ -25,7 +25,8 @@ things going on there...
 
 Spreading:
 ```js
-
+    const a = [1,2,3];
+    const b = [...a, 4, 5]
 ```
 
 
