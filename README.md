@@ -17,11 +17,12 @@ const firstEle = getHead(list);
 
 things going on there...
 
-1) Destructuring
-2) arrow functions
-3) implicit return in arrow functions
-4) var dumping in destructuring ,
-5) ( ͡° ͜ʖ ͡°) 
+1. const
+1. Destructuring
+1. arrow functions
+1. implicit return in arrow functions
+1. var dumping in destructuring ,
+1. ( ͡° ͜ʖ ͡°) 
 
 
 Spreading:
