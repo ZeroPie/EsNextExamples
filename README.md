@@ -6,7 +6,7 @@ Return a reversed copy of it
 
 
 ```js
-const list = ['1st', 8,9]
+const list = ['1st', 8, 9, 10]
 
 const getHead = ([head]) => head  // ( ͡° ͜ʖ ͡°)  
 const getTail = ([, ...tail]) => tail
@@ -15,7 +15,27 @@ const allButtFirst = getTail(list);
 const firstEle = getHead(list);
 ```
 
-const invertArray = array => [...array].reverse();
+things going on there...
+
+1) destructuring
+2) arrow functions
+3) var dumping in destructuring ,
+4) ( ͡° ͜ʖ ͡°) 
+
+
+Spreading:
+```js
+
+```
+
+
+Return a copy
+```js
+    const invertArray = array => [...array].reverse();
+    
+
+
+
 
 
 OK ok what's all this magic?
