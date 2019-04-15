@@ -2,8 +2,6 @@
 
 
 
-Return a reversed copy of it
-
 
 ```js
 const list = ['1st', 8, 9, 10]
