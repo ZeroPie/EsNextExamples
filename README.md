@@ -10,7 +10,6 @@ const list = ['1st', 8,9]
 
 const getHead = ([head]) => head  // ( ͡° ͜ʖ ͡°)  
 const getTail = ([, ...tail]) => tail
-const hed = getHead(list)
 
 const allButtFirst = getTail(list);
 const firstEle = getHead(list);
