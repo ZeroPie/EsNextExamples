@@ -32,13 +32,13 @@ Spreading:
 Return a copy
 ```js
     const invertArray = array => [...array].reverse();
-    
+````
 
 
 
 
 
-OK ok what's all this magic?
+A Real World Example
 
 ```js
 export const doGetUserByUid = async uid =>
