@@ -17,7 +17,18 @@ const firstEle = getHead(list);
 
 things going on there...
 
-1. const
+1. const (cannot be reassigned but is mutable)
+
+```
+const nevaGonnaChange = [1,2];
+
+nevaGonnaChange.map(i => console.log(` I will never change ${i}`))
+
+nevaGonnaChange[0] = 0
+nevaGonnaChange[1] = 0
+
+nevaGonnaChange.map(i => console.log(` wait wat? ${i}`))
+```
 1. Destructuring
 1. arrow functions
 1. implicit return in arrow functions
