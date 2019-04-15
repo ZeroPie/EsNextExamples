@@ -21,6 +21,9 @@ things going on there...
 1. Arrow functions
 1. Implicit return in arrow functions
 1. ( ͡° ͜ʖ ͡°) 
+
+
+
 1. const (cannot be reassigned but is mutable)
 
 ```js
