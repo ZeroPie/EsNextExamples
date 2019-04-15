@@ -48,8 +48,6 @@ Destructuring:
 
 
 ```
-
-
 const pileOfGoo = {
   goo: 'goo',
   isToxic: true,
@@ -72,22 +70,6 @@ export const createUser = ({
   },
   photoURL
 })
-
-
-const list = ['1st', 8,9]
-//const [head, ...tail] = list
-
-const getHead = ([head]) => head
-const getTail = ([, ...tail]) => tail
-const bj = getHead(list)
-bj
-const booty = getTail(list);
-booty
-
-
-
-
-
 ```
 
 ``` js
