@@ -24,7 +24,9 @@ things going on there...
 
 
 
-1. const (cannot be reassigned but is mutable)
+
+
+!! const (cannot be reassigned but is mutable)
 
 ```js
 const nevaGonnaChange = [1,2];
