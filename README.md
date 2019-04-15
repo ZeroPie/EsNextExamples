@@ -19,8 +19,9 @@ things going on there...
 
 1) Destructuring
 2) arrow functions
-3) var dumping in destructuring ,
-4) ( ͡° ͜ʖ ͡°) 
+3) implicit return in arrow functions
+4) var dumping in destructuring ,
+5) ( ͡° ͜ʖ ͡°) 
 
 
 Spreading:
