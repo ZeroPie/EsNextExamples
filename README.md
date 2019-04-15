@@ -8,7 +8,7 @@ Return a reversed copy of it
 ```js
 const list = ['1st', 8,9]
 
-const getHead = ([head]) => head
+const getHead = ([head]) => head  // ( ͡° ͜ʖ ͡°)  
 const getTail = ([, ...tail]) => tail
 const hed = getHead(list)
 
