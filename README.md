@@ -16,10 +16,14 @@ const firstEle = getHead(list);
 ```
 
 things going on there...
-
+1. const
+1. Destructuring/Spreading
+1. Arrow functions
+1. Implicit return in arrow functions
+1. ( ͡° ͜ʖ ͡°) 
 1. const (cannot be reassigned but is mutable)
 
-```
+```js
 const nevaGonnaChange = [1,2];
 
 nevaGonnaChange.map(i => console.log(` I will never change ${i}`))
@@ -29,17 +33,17 @@ nevaGonnaChange[1] = 0
 
 nevaGonnaChange.map(i => console.log(` wait wat? ${i}`))
 ```
-1. Destructuring
-1. arrow functions
-1. implicit return in arrow functions
-1. var dumping in destructuring ,
-1. ( ͡° ͜ʖ ͡°) 
 
-
-Spreading:
+2.Spreading:
 ```js
     const a = [1,2,3];
     const b = [...a, 4, 5]
+```
+
+Var dumping in destructuring 
+```
+  const list = ['1st', 8, 9, 10]
+  const getTail = ([, ...tail]) => tail
 ```
 
 
@@ -47,9 +51,6 @@ Return a copy
 ```js
     const invertArray = array => [...array].reverse();
 ````
-
-
-
 
 
 A Real World Example
