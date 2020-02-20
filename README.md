@@ -179,3 +179,14 @@ const fetchMessages = async (roomId) => {
         return messages
 }
 ```
+
+
+Reverse a String 
+
+```
+const reverse = s => [...s].reverse()
+```
+
+```
+const reverse = s => [...s].reduce((acc, ce, i) => ce + acc)
+```
