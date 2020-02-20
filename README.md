@@ -188,5 +188,5 @@ const reverse = s => [...s].reverse()
 ```
 
 ```
-const reverse = s => [...s].reduce((acc, ce, i) => ce + acc)
+const reverse = s => [...s].reduce((acc, ce) => ce + acc)
 ```
